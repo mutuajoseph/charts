@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{%  block title %} Browser {% endblock %}
+{%  block head %} <h4 align="center">Browser usage from 2000 to 2013</h4> {% endblock %}
+{%  block content %}
+
+<div id="chart">
+    <embed type="image/svg+xml" src={{ line_chart | safe }} />
+</div>
+
+
+{%  endblock %}

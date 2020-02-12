@@ -1,0 +1,17 @@
+{%  extends 'base.html' %}
+{%  block title %} Graph {% endblock %}
+{% block head %}
+<h1>Line Graph</h1>
+{% endblock %}
+{% block content %}
+
+<h1>My Line chart</h1>
+
+
+
+<div id="chart">
+    <embed type="image/svg+xml" src={{ line |safe }} />
+</div>
+
+
+{% endblock %}
